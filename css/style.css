@@ -1,0 +1,35 @@
+.box{width: 20%; height: 250px; 
+
+	animation-name: a;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+
+	transition-property: all;
+	transition-duration: 0.3s;
+	}
+
+
+	.a{animation-delay: 0.2s}
+	.b{animation-delay: 0.3s}
+	.c{animation-delay: 0.6s}
+	.d{animation-delay: 0s}
+	.e{animation-delay: 0.4s}
+	.f{animation-delay: 0.1s}
+
+
+
+	@-webkit-keyframes a{
+		0%{ margin-top: 0; transform: rotate(0deg); }
+		
+
+		50%{ margin-top:100% } 
+
+		100%{ margin-top: 0; transform: rotate(360deg);}
+	}
+
+
+
+	.box:hover{
+	animation-play-state: paused;
+
+	}
